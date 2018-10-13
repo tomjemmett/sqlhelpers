@@ -146,7 +146,7 @@ test_that("it calls fixDates", {
             "query",
             a = 1,
             b = 2)
-  })
+  }, .env = "sqlhelpers")
 
   expect_args(m, 1, a = 1, b = 2)
 })
