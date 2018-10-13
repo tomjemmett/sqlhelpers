@@ -9,7 +9,8 @@ interpolation of any sql parameters.
 
 To run a query against a database, the server must first have an ODBC
 DSN configured. The name of the DSN becomes the "server" parameter
-to the `queryDb` and `queryDbFromFile` functions.
+to the `queryDb` and `queryDbFromFile` functions. You can find
+details of how to create a DSN in [Windows here](https://docs.microsoft.com/en-us/sql/relational-databases/native-client-odbc-how-to/configuring-the-sql-server-odbc-driver-add-a-data-source?view=sql-server-2017).
 
 It is simple to use parameters in your sql queries. Where you wish to
 use a parameter, simply enter a ? followed by the name of the parameter.
