@@ -1,0 +1,25 @@
+Package: sqlhelpers
+Type: Package
+Title: Helper functions for querying Sql Databases
+Version: 0.1.0
+Author: Tom Jemmett
+Maintainer: Tom Jemmett <tom.jemmett@gmail.com>
+Description: Functions to help users query data from Sql databases in a simple
+    and safe manor, handling the opening and closing of connections,
+    parameterisation of queries and reading .sql files, utilising odbc to
+    connect to servers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    readr,
+    DBI,
+    odbc,
+    tibble,
+    lubridate,
+    purrr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0
+Suggests: 
+    testthat,
+    mockery
