@@ -2,6 +2,8 @@
 
 Functions for simplifying the retrieval of data from Sql databases.
 
+To install with devtools, run `devtools::install_github("sqlhelpers/tomjemmett")`
+
 This package exports two functions: `queryDb` and `queryDbFromFile`.
 These two functions allow a user to run a query against a database,
 handling the connection and disconnection from the server as well as
