@@ -4,12 +4,12 @@ library(testthat)
 library(sqlhelpers)
 library(mockery)
 
-test_that("it calls readr::read_lines with the filename", {
+test_that("it calls readr::read_file with the filename", {
   filename <- "test_file.sql"
   m <- mock()
   stub(queryDbFromFile, "queryDb", NULL)
 
-  with_mock(read_lines = m, {
+  with_mock(read_file = m, {
     queryDbFromFile("server",
                     "database",
                     filename)
@@ -21,7 +21,7 @@ test_that("it calls readr::read_lines with the filename", {
 test_that("it calls queryDb with the passed parameters and the contents of the file", {
   query <- "abc"
   m <- mock()
-  stub(queryDbFromFile, "readr::read_lines", query)
+  stub(queryDbFromFile, "readr::read_file", query)
 
   with_mock(queryDb = m, {
     queryDbFromFile("server",

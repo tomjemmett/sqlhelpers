@@ -46,6 +46,6 @@ queryDbFromFile <- function (server,
                              database,
                              filename,
                              ...) {
-  query <- readr::read_lines(filename)
+  query <- readr::read_file(filename)
   queryDb(server, database, query, ...)
 }
