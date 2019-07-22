@@ -7,7 +7,8 @@
 queryDb(server, database, query, ...)
 }
 \arguments{
-\item{server}{The name of the DSN for the server you want to connect to}
+\item{server}{The name of the DSN for the server you want to connect to, or the name
+of a environment variable (with the prefix R_DB_)}
 
 \item{database}{The name of the database that you want to run the query against}
 
@@ -29,6 +30,9 @@ read the query from a file.
 The connection to the server is made by odbc and uses the name of a DSN to
 connect to. This removes any requirement to hard code in usernames, passwords
 and connection strings into files.
+
+Altenatively, you can create an environment variable called R_DB_[SERVER]
+as a json string that contains all of the parameters to pass to dbConnect.
 
 Parameters can be used in queries by either specifying each parameter and
 it's value after the query parameter, or by specifying all of the parameters
