@@ -1,7 +1,7 @@
 Package: sqlhelpers
 Type: Package
 Title: Helper functions for querying Sql Databases
-Version: 0.1.0
+Version: 0.1.1
 Author: Tom Jemmett
 Maintainer: Tom Jemmett <tom.jemmett@gmail.com>
 Description: Functions to help users query data from Sql databases in a simple
