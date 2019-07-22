@@ -108,9 +108,9 @@ Package: devtools
 Source: CRAN
 Version: 2.1.0
 Hash: a2b0108d1ddb79155e92e1939ce47d29
-Requires: digest, withr, cli, testthat, callr, git2r, httr, jsonlite,
-    memoise, pkgbuild, pkgload, rcmdcheck, remotes, roxygen2,
-    rstudioapi, sessioninfo, usethis
+Requires: digest, git2r, jsonlite, remotes, rstudioapi, withr, cli,
+    memoise, sessioninfo, testthat, callr, pkgbuild, httr, pkgload,
+    rcmdcheck, roxygen2, usethis
 
 Package: digest
 Source: CRAN
@@ -138,7 +138,7 @@ Package: gh
 Source: CRAN
 Version: 1.0.1
 Hash: 0fafa863f1a86a1f1966e5d5b46a48b5
-Requires: httr, ini, jsonlite
+Requires: ini, jsonlite, httr
 
 Package: git2r
 Source: CRAN
@@ -204,7 +204,7 @@ Package: odbc
 Source: CRAN
 Version: 1.1.6
 Hash: 3b35f7ae66fcfb16b8d4b25205dcea6a
-Requires: BH, DBI, Rcpp, bit64, hms, blob
+Requires: BH, DBI, Rcpp, bit64, blob, hms
 
 Package: openssl
 Source: CRAN
@@ -227,7 +227,7 @@ Package: pkgbuild
 Source: CRAN
 Version: 1.0.3
 Hash: 59dd44c0ddf2f59ee68813240ed2c871
-Requires: R6, crayon, withr, cli, prettyunits, callr, desc, rprojroot
+Requires: R6, crayon, withr, rprojroot, cli, prettyunits, desc, callr
 
 Package: pkgconfig
 Source: CRAN
@@ -238,7 +238,7 @@ Package: pkgload
 Source: CRAN
 Version: 1.0.2
 Hash: 41eb2db35be61f6f9e8864cf87a1ecb0
-Requires: rlang, withr, desc, pkgbuild, rprojroot, rstudioapi
+Requires: rlang, rstudioapi, withr, rprojroot, desc, pkgbuild
 
 Package: praise
 Source: CRAN
@@ -272,14 +272,14 @@ Package: rcmdcheck
 Source: CRAN
 Version: 1.3.3
 Hash: 33907979a9219df837ca3d40b11b6652
-Requires: R6, crayon, digest, withr, cli, prettyunits, callr, desc,
-    pkgbuild, rprojroot, sessioninfo, xopen
+Requires: R6, crayon, digest, withr, rprojroot, cli, prettyunits, desc,
+    sessioninfo, callr, xopen, pkgbuild
 
 Package: readr
 Source: CRAN
 Version: 1.1.1
 Hash: ae25f6a2eed39382eb9d7b807923fef3
-Requires: BH, R6, Rcpp, crayon, hms, tibble, clipr
+Requires: BH, R6, Rcpp, clipr, crayon, hms, tibble
 
 Package: remotes
 Source: CRAN
@@ -295,8 +295,8 @@ Package: roxygen2
 Source: CRAN
 Version: 6.1.1
 Hash: 17e7d5f731ad04292f1b8b616c83318b
-Requires: R6, Rcpp, digest, stringi, stringr, purrr, brew, commonmark,
-    desc, pkgload, xml2
+Requires: R6, Rcpp, brew, commonmark, digest, stringi, xml2, purrr,
+    stringr, desc, pkgload
 
 Package: rprojroot
 Source: CRAN
@@ -347,8 +347,8 @@ Package: usethis
 Source: CRAN
 Version: 1.5.1
 Hash: 1a3f09efcce670dc6a5562cfd3c71d66
-Requires: crayon, glue, rlang, withr, purrr, clipr, clisymbols, curl,
-    desc, fs, gh, git2r, rprojroot, rstudioapi, whisker, yaml
+Requires: clipr, clisymbols, crayon, curl, git2r, glue, rlang,
+    rstudioapi, whisker, withr, yaml, fs, rprojroot, purrr, desc, gh
 
 Package: utf8
 Source: CRAN
@@ -359,7 +359,7 @@ Package: vctrs
 Source: CRAN
 Version: 0.2.0
 Hash: daf77cb3dbcacd7fb619cb3748dc215f
-Requires: digest, glue, rlang, backports, ellipsis, zeallot
+Requires: backports, digest, glue, rlang, zeallot, ellipsis
 
 Package: whisker
 Source: CRAN
